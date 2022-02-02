@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+:root {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+$clr-Very-dark-blue: hsl(233, 47%, 7%); //(main background)
+$clr-Dark-desaturated-blue: hsl(244, 38%, 16%); //(card background)
+$clr-Soft-violet: hsl(277, 64%, 61%); //(accent)
+$clr-White: hsl(0, 0%, 100%); //(main heading, stats)
+$clr-Slightly-transparent-white: hsla(0, 0%, 100%, 0.75); //(main paragraph)
+$clr-Slightly-transparent-white: hsla(0, 0%, 100%, 0.6); //(stat headings)
+$family-Inter: "Inter";
+$family-Lexend-Deca: "Lexend Deca";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $clr-Very-dark-blue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .main-image {
+  }
+  h1 {
+  }
+  .description {
+  }
+  .achievements {
+    h2 {
+    }
+    .achievements-para {
+    }
+  }
+}

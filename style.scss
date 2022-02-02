@@ -96,11 +96,11 @@ main {
     }
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   main {
     all: unset;
     width: 900px;
-    height: 380px;
+    height: 390px;
     display: flex;
     flex-direction: row-reverse;
     border-top-left-radius: 0.5rem;

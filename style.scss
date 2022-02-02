@@ -32,7 +32,6 @@ main {
   align-items: center;
   width: 320px;
   background-color: $clr-Dark-desaturated-blue;
-  //   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
   padding-bottom: 2rem;
@@ -43,13 +42,21 @@ main {
     border-bottom-right-radius: 0rem;
     border-bottom-left-radius: 0rem;
   }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
   h1 {
     font-family: $family-Inter;
     color: $clr-White;
     font-size: 1.7rem;
     margin-top: 2rem;
     padding: 0rem 2rem;
-    text-align: center;
+    // text-align: center;
   }
   span {
     color: $clr-Soft-violet;
@@ -64,6 +71,10 @@ main {
     font-family: $family-Inter;
     margin-top: 1rem;
     padding: 0rem 2rem;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
   }
   .achievements {
     margin-top: 2rem;
@@ -82,6 +93,59 @@ main {
       font-size: 0.6rem;
       text-transform: uppercase;
       font-family: $family-Lexend-Deca;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  main {
+    all: unset;
+    width: 900px;
+    height: 380px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    .main-image {
+      all: unset;
+      float: right;
+      width: 50%;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    .main-content {
+      all: unset;
+      background-color: $clr-Dark-desaturated-blue;
+      border-radius: 0.5rem;
+      line-height: 1.5;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 2rem;
+      padding-top: 1.5rem;
+      // padding-bottom: 1.5rem;
+      padding-right: 3rem;
+
+      border-top-right-radius: 0rem;
+      border-bottom-right-radius: 0rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 2rem;
+    }
+    .description {
+      // padding-right: 2.8rem;
+    }
+    .stats {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      padding-left: 1rem;
+      margin-top: 2rem;
     }
   }
 }
